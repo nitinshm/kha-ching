@@ -42,7 +42,18 @@ const Strategy = () => {
         </StratLayout>
       );
     }
-    default: {
+    case 'fut-trail-sl': {
+      return (
+        <StratLayout>
+          <TradeSetup
+            LOCALSTORAGE_KEY={FUT_TRAIL_SL_TRADE_LS_KEY}
+            strategy={STRATEGIES.FUT_TRAIL_SL}
+            enabledInstruments={[INSTRUMENTS.NIFTY, INSTRUMENTS.BANKNIFTY]}
+            exitStrategies={[EXIT_STRATEGIES.FUT_TRAIL_SL]}
+          />
+        </StratLayout>
+      );
+    }default: {
       return (
         <Layout>
           <Link href="/dashboard">Nothing here. Go back to dashboard!</Link>
