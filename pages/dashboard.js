@@ -22,6 +22,9 @@ const Dashboard = () => {
         <ListItem>
           <Link href="/strat/cm-wed-thurs">Capitalmind Wed &amp; Thurs</Link>
         </ListItem>
+        <ListItem>
+          <Link href="/strat/trail-fut-sl">Trailing Future SL</Link>
+        </ListItem>
       </List>
     </Layout>
   );
